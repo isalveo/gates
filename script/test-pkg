@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+set -e
+
+PACKAGES=""
+EXCLUDE_REGEXP="\.|stash"
+
+for pkgpath in src/*/ ; do
+  pkg=`basename $pkgpath`
+
+  if [[ $pkg =~ $EXCLUDE_REGEXP ]]; then
+    continue
+  fi
+
+  PACKAGES=$PACKAGES" "$pkg
+done
+
+GOPATH=$PWD go test $PACKAGES -cover

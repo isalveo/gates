@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+set -e
+
+cd $PWD/src
+
+mkdir -p github.com/quipo
+git clone https://github.com/quipo/statsd.git github.com/quipo/statsd

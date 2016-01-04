@@ -1,0 +1,7 @@
+{
+  "log_file": "",
+  "log_to_syslog": false,
+  "values" : {
+    "db_config": ""
+  }
+}

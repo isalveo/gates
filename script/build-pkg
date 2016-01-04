@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+
+set -e
+
+BRANCH_NAME=$(git rev-parse --abbrev-ref HEAD | sed 's/\//_/g;')
+BASE_VERSION="0.0.1"
+BUILD_NUMBER=${BUILD_NUMBER:-0}
+DATE=$(date +%Y%m%d)
+VERSION_STRING=${BASE_VERSION}.${BUILD_NUMBER}-${DATE}-1
+SERVICE_NAME="hermes-gatekeeper"
+PACKAGE_NAME="$SERVICE_NAME-$VERSION_STRING.deb"
+
+export PATH=/opt/lang/go-1.4.2/bin:$PATH
+
+mkdir -p bin
+
+export GOPATH=$PWD
+
+echo "Building $BRANCH_NAME at $VERSION_STRING in $PROJECT_HOME on $HOSTNAME"
+
+go build -o bin/gatekeeper -v -x src/main.go
