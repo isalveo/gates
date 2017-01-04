@@ -16,6 +16,8 @@ mkdir -p bin
 
 export GOPATH=$PWD
 
+echo $GOPATH
+
 echo "Building $BRANCH_NAME at $VERSION_STRING in $PROJECT_HOME on $HOSTNAME"
 
 go build -o bin/gatekeeper -v -x src/main.go

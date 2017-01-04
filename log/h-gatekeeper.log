@@ -60,3 +60,43 @@
 2016/01/03 21:10:37.641578 logging.go:22:   "GET /hello HTTP/1.1" 201
 2016/01/03 21:10:56.009544 logging.go:22: PROXIED:127.0.0.1:53750
 2016/01/03 21:10:56.081565 logging.go:22:   "GET /hello HTTP/1.1" 201
+2016/03/08 16:59:20.881418 logging.go:22: PROXIED:127.0.0.1:52048
+2016/03/08 16:59:20.887009 logging.go:22:   "GET /hello HTTP/1.1" 201
+2016/03/08 17:05:09.972132 logging.go:22: PROXIED:127.0.0.1:52433
+2016/03/08 17:05:10.088113 logging.go:22:   "GET /hello HTTP/1.1" 201
+2016/03/08 17:19:22.641943 logging.go:22: PROXIED:127.0.0.1:53108
+2016/03/08 17:19:22.733634 logging.go:22:   "GET /hello HTTP/1.1" 201
+2016/03/20 19:14:13.085711 logging.go:22: PROXIED:127.0.0.1:50083
+2016/03/20 19:14:13.091190 logging.go:22:   "GET /hello HTTP/1.1" 201
+2016/03/20 19:31:13.746474 logging.go:22:  [::1]:50926 "GET /keymaster/addresses/2d870da85b9eaf3ff244dee535d790a1/edit HTTP/1.1" 404
+QUERY PARAMS: 
+REQUEST BODY:
+        
+ERROR: Not Found
+2016/03/20 22:07:45.551862 logging.go:22:  [::1]:59126 "GET http://hermes%2Fv1/heartbeat HTTP/1.1" 500
+2016/03/20 22:09:27.283883 logging.go:22: PROXIED:localhost:3370
+2016/03/20 22:09:27.425138 logging.go:22:  [::1]:59126 "GET http://hermes%2Fv1/heartbeat HTTP/1.1" 200
+2016/04/10 19:57:43.109374 logging.go:22:  [::1]:61438 "GET / HTTP/1.1" 404
+QUERY PARAMS: 
+REQUEST BODY:
+        
+ERROR: Not Found
+2016/04/10 19:57:43.534737 logging.go:22:  [::1]:61438 "GET /favicon.ico HTTP/1.1" 404
+QUERY PARAMS: 
+REQUEST BODY:
+        
+ERROR: Not Found
+2016/11/21 20:57:18.111586 logging.go:22:   "GET /hello HTTP/1.1" 201
+2016/11/21 20:57:18.111975 logging.go:22: PROXIED:127.0.0.1:59683
+2016/11/21 21:01:51.784375 logging.go:22: PROXIED:127.0.0.1:59807
+2016/11/21 21:01:51.890884 logging.go:22:   "GET /hello HTTP/1.1" 201
+2016/11/21 21:03:17.120069 logging.go:22:  [::1]:59834 "GET /test HTTP/1.1" 404
+QUERY PARAMS: 
+REQUEST BODY:
+        
+ERROR: Not Found
+2016/11/21 21:03:17.462760 logging.go:22:  [::1]:59834 "GET /favicon.ico HTTP/1.1" 404
+QUERY PARAMS: 
+REQUEST BODY:
+        
+ERROR: Not Found
